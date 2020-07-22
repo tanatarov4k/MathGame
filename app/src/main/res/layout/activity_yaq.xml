@@ -42,12 +42,14 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="SIZ UTILDIN'IZ"
-        android:textColor="#ffffff"
-        android:textSize="36sp"
+        android:text="SIZ UTILDIN'IZ\nSEBEBI SIZDE\n3 QA'TE"
+        android:textAlignment="center"
+        android:textColor="#9E3333"
+        android:textSize="25sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toTopOf="@id/gv1"
+        app:layout_constraintVertical_bias="0.9"
         />
 </androidx.constraintlayout.widget.ConstraintLayout>
