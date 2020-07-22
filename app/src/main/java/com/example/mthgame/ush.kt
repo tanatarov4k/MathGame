@@ -9,7 +9,13 @@ import kotlinx.android.synthetic.main.activity_ush.*
 import kotlin.random.Random
 
 class ush : AppCompatActivity() {
-    private var ss:Int = 0
+    companion object{
+        const val LEVEL_COUNT = 10
+        const val RIGHT_ANSWERS_COUNT = "rightAnswersCount"
+        const val WRONG_ANSWERS_COUNT = "wrongAnswersCount"
+    }
+    private var currentLevelCount = 1
+    private var ss:Int = 0  //currentLevelCount = 1
     private var dj:Int = 0
     private var qj:Int = 0
     private var juwap : Int = 0
@@ -40,6 +46,8 @@ class ush : AppCompatActivity() {
             }
         }else if (ss == dj + qj){
             val intento = Intent(this,awa::class.java)
+            intento.putExtra(WRONG_ANSWERS_COUNT,qj)
+            intento.putExtra(RIGHT_ANSWERS_COUNT,dj)
             startActivity(intento)
             finish()
         }

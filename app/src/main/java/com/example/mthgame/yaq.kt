@@ -3,6 +3,7 @@ package com.example.mthgame
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import kotlinx.android.synthetic.main.activity_ush.*
 import kotlinx.android.synthetic.main.activity_yaq.*
 
 class yaq : AppCompatActivity() {
